@@ -19,7 +19,9 @@ dependencies
 Edit the header and footer HTML in the `./index.jsx`.
 
 Rename `./stories/one` and `./stories/two` into something relevant to your problem domain, and register
-the new names in the `./content.js` file.
+the new names in the `./content.js` file. Go edit the Markdown in the `./stories/*/narrative.md`
+files; put your implementation tasks, with the estimation ranges (in hours) into the
+`./stories/*/tasks.json` files.
 
 Then, by analogy, add more `./stories/*` directories. Place all the image files into the `./build`
 directory.
