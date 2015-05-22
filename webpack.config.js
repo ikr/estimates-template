@@ -12,7 +12,12 @@ module.exports = {
 
     module: {
         loaders: [
-            {test: /\.(jsx|js)$/, loader: "babel-loader"},
+            {
+                test: /\.(jsx|js)$/,
+                exclude: /node_modules/,
+                loader: "babel-loader"
+            },
+
             {test: /\.md$/, loader: "raw-loader"},
             {test: /\.json$/, loader: "json-loader"}
         ]
