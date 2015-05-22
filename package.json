@@ -2,7 +2,7 @@
   "name": "estimates-template",
   "version": "1.0.0",
   "description": "Write user stories in Markdown, list the implementation tasks for each (with estimation range), publish the interactive estimation document",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
