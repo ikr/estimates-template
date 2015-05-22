@@ -1,6 +1,6 @@
 # Summary
 
-Write user stories in Markdown, list the implementation tasks for each (with estimation range),
+Write user stories in Markdown, list the implementation tasks for each (with an estimation range),
 publish an interactive estimation document, like [that one](https://ikr.su/h/estimates-template/).
 
 # Usage
