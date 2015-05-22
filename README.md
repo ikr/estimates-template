@@ -16,14 +16,15 @@ dependencies
 
     $ npm install
 
-Rename `./story/one` and `./story/two` into something relevant to your problem domain, and register
+Rename `./stories/one` and `./stories/two` into something relevant to your problem domain, and register
 the new names in the `./content.js` file.
 
-Then, by analogy, add more story directories.
+Then, by analogy, add more `./stories/*` directories. Place all the image files into the `./build`
+directory.
 
-When done, build the interactive estimation document
+When done, build the interactive estimation document.
 
-$ npm run build
+    $ npm run build
 
 Now it can be Web-published, with the `./build/index.html` as the entry point. Here's a sample Nginx
 configuration snippet
