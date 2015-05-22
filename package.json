@@ -4,7 +4,10 @@
   "description": "Write user stories in Markdown, list the implementation tasks for each (with estimation range), publish the interactive estimation document",
   "main": "index.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "cp ./node_modules/babel-core/browser-polyfill.min.js ./build/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "watch": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,19 @@
   "bugs": {
     "url": "https://github.com/ikr/estimates-template/issues"
   },
-  "homepage": "https://github.com/ikr/estimates-template#readme"
+  "homepage": "https://github.com/ikr/estimates-template#readme",
+  "dependencies": {
+    "estimate-tasks": "^0.1.0",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "babel-core": "^5.4.7",
+    "babel-loader": "^5.1.3",
+    "file-loader": "^0.8.3",
+    "json-loader": "^0.5.1",
+    "markdown": "^0.5.0",
+    "node-libs-browser": "^0.5.2",
+    "raw-loader": "^0.5.1",
+    "webpack": "^1.9.8"
+  }
 }
