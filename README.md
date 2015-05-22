@@ -14,10 +14,10 @@ Clone this repository into a directory of a new estimation project
 Describe your estimation project in the `./package.json` properties. Then, install the npm
 dependencies
 
-$ npm install
+    $ npm install
 
 Rename `./story/one` and `./story/two` into something relevant to your problem domain, and register
-the new names in the `./contents.js` file.
+the new names in the `./content.js` file.
 
 Then, by analogy, add more story directories.
 
