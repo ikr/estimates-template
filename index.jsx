@@ -40,18 +40,16 @@ class Container extends React.Component {
 
         return (
             <div className="container">
-                <h1>Swissport layover user stories</h1>
+                <h1>Sample user stories</h1>
                 {stories}
                 <StoriesTotal allTasks={tasks}/>
 
                 <ul className="footer text-right list-unstyled">
-                    <li>March 2015</li>
+                    <li>May 2015</li>
 
                     <li>
-                        Ivan Krechetov &lt;<a href="mailto:ikr@xiag.ch">ikr@xiag.ch</a>&gt;
+                        Ivan Krechetov &lt;<a href="mailto:ikr@ikr.su">ikr@ikr.su</a>&gt;
                     </li>
-
-                    <li>XIAG AG/Swiss Travel Centre</li>
                 </ul>
             </div>
         );
