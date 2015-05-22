@@ -1,0 +1,8 @@
+[
+    ["ES6/webpack infrastructure", 3, 7],
+    ["Supporting architecture: json-back-end + react components structure", 3, 6],
+    ["Client-side routing", 5, 9],
+    ["Wiring to the legacy authentication and authorization", 6, 10],
+    ["Clean reduction of the legacy functionality", 6, 10],
+    ["Automatic deployment definition", 5, 8]
+]

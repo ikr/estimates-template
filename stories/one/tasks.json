@@ -1,0 +1,9 @@
+[
+    ["Navigation to the new form", 3, 6],
+    ["Browser form components", 10, 16],
+    ["HTTP/JSON API", 12, 18],
+    ["Occupancy coverage logic", 18, 24],
+    ["Bulk assignment of the occupied rooms' properties", 6, 8],
+    ["Wiring to the legacy basket population", 10, 15],
+    ["Wiring the new navigation to the legacy booking process", 8, 16]
+]
