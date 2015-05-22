@@ -16,6 +16,8 @@ dependencies
 
     $ npm install
 
+Edit the header and footer HTML in the `./index.jsx`.
+
 Rename `./stories/one` and `./stories/two` into something relevant to your problem domain, and register
 the new names in the `./content.js` file.
 
