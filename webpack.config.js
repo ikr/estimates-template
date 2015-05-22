@@ -6,6 +6,10 @@ module.exports = {
         filename: "./build/bundle.js"
     },
 
+    resolve: {
+        extensions: ['', '.js', '.jsx', '.json']
+    },
+
     module: {
         loaders: [
             {test: /\.(jsx|js)$/, loader: "babel-loader"},
