@@ -2,7 +2,7 @@
   "name": "estimates-template",
   "version": "1.0.0",
   "description": "Write user stories in Markdown, list the implementation tasks for each (with an estimation range), publish an interactive estimation document",
-  "main": "index.jsx",
+  "main": "index.js",
   "scripts": {
     "postinstall": "cp ./node_modules/babel-core/browser-polyfill.min.js ./build/",
     "test": "echo \"Error: no test specified\" && exit 1",
