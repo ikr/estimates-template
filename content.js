@@ -1,10 +1,9 @@
-/* eslint global-require: 0 */
-/* global require */
+var fs = require('fs');
 
-export default () => [{
-    narrative: require('./stories/one/narrative.md'),
-    tasks: require('./stories/one/tasks.json')
+module.exports = [{
+    narrative: fs.readFileSync(__dirname + '/stories/one/narrative.md', 'utf8'),
+    tasks: require('./stories/one/tasks')
 }, {
-    narrative: require('./stories/two/narrative.md'),
-    tasks: require('./stories/two/tasks.json')
+    narrative: fs.readFileSync(__dirname + '/stories/two/narrative.md', 'utf8'),
+    tasks: require('./stories/two/tasks')
 }];
