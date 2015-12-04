@@ -4,6 +4,7 @@
   "description": "Write user stories in Markdown, list the implementation tasks for each (with an estimation range), publish an interactive estimation document",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./src ./index.js ./content.js",
     "postinstall": "cp ./node_modules/babel-core/browser-polyfill.min.js ./build/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -p",
@@ -32,6 +33,8 @@
   "devDependencies": {
     "babel-core": "^5.4.7",
     "babel-loader": "^5.1.3",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "^3.11.2",
     "file-loader": "^0.8.3",
     "json-loader": "^0.5.1",
     "markdown": "^0.5.0",
