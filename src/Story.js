@@ -30,11 +30,11 @@ class Story extends React.Component {
                     <div className='checkbox col-md-2'>
                         <label>
                             <input
-                            type='checkbox'
-                            checked={this.props.active}
-                            onChange={this.props.onChangeActivity}>
-                                Include into total estimation
-                            </input>
+                                type='checkbox'
+                                checked={this.props.active}
+                                onChange={this.props.onChangeActivity}/>
+
+                            Include into total estimation
                         </label>
                     </div>
 

@@ -26,7 +26,8 @@
   "homepage": "https://github.com/ikr/estimates-template#readme",
   "dependencies": {
     "estimate-tasks": "^0.1.0",
-    "react": "^0.14.3"
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
   },
   "devDependencies": {
     "babel-polyfill": "^6.3.13",

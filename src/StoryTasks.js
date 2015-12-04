@@ -15,12 +15,14 @@ class StoryTasks extends React.Component {
 
         return (
             <table className='table table-striped'>
-                <tr>
-                    <th>Task title</th>
-                    <th>Estimation range (hours)</th>
-                </tr>
+                <tbody>
+                    <tr>
+                        <th>Task title</th>
+                        <th>Estimation range (hours)</th>
+                    </tr>
 
-                {rows}
+                    {rows}
+                </tbody>
             </table>
         );
     }

@@ -1,5 +1,6 @@
 import polyfill from 'babel-polyfill';
 import React from 'react';
+import {render} from 'react-dom';
 import Story from './src/Story';
 import StoriesTotal from './src/StoriesTotal';
 import allActiveTasks from './src/allActiveTasks';
@@ -85,4 +86,4 @@ class Container extends React.Component {
 Container.defaultProps = {stories: content};
 
 /* global global */
-React.render(React.createElement(Container), global.document.body);
+render(<Container/>, global.document.getElementById('root'));
