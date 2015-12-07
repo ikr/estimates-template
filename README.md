@@ -3,7 +3,7 @@
 Write user stories in Markdown, list the implementation tasks for each (with an estimation range),
 publish an interactive estimation document, like [that one](https://ikr.su/h/estimates-template/).
 
-# Usage
+# Installation
 
 Clone this repository into a directory of a new estimation project
 
@@ -15,6 +15,8 @@ Describe your estimation project in the `./package.json` properties. Then, insta
 dependencies
 
     $ npm install
+    
+# Authoring
 
 Edit the header and footer HTML in the `./index.js`.
 
@@ -25,6 +27,8 @@ files; put your implementation tasks, with the estimation ranges (in hours) into
 
 Then, by analogy, add more `./stories/*` directories. Place all the image files into the `./www`
 directory.
+
+# Compilation
 
 When done, build the interactive estimation document.
 
@@ -38,6 +42,8 @@ configuration snippet
     }
 
 defining the `http://example.com/estimates-foobar/` route.
+
+# Automatic update
 
 There's also a `watch` script, that can auto-build the estimation document every time you change
 it. That's quite useful for the active user stories writing and estimation phase.
