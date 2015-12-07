@@ -16,25 +16,33 @@ dependencies
 
     $ npm install
 
-Edit the header and footer HTML in the `./index.jsx`.
+Edit the header and footer HTML in the `./index.js`.
 
 Rename `./stories/one` and `./stories/two` into something relevant to your problem domain, and register
 the new names in the `./content.js` file. Go edit the Markdown in the `./stories/*/narrative.md`
 files; put your implementation tasks, with the estimation ranges (in hours) into the
 `./stories/*/tasks.json` files.
 
-Then, by analogy, add more `./stories/*` directories. Place all the image files into the `./build`
+Then, by analogy, add more `./stories/*` directories. Place all the image files into the `./www`
 directory.
 
 When done, build the interactive estimation document.
 
     $ npm run build
 
-Now it can be Web-published, with the `./build/index.html` as the entry point. Here's a sample Nginx
+Now it can be Web-published, with the `./www/index.html` as the entry point. Here's a sample Nginx
 configuration snippet
 
     location /estimates-foobar/ {
-        alias /var/www/example.com/estimates-foobar/build/;
+        alias /var/www/example.com/estimates-foobar/www/;
     }
 
 defining the `http://example.com/estimates-foobar/` route.
+
+There's also a `watch` script, that can auto-build the estimation document every time you change
+it. That's quite useful for the active user stories writing and estimation phase.
+
+    $ npm run watch
+
+Please note that `watch` doesn't minify the output JavaScript bundle, and thus isn't suitable for
+production use.
