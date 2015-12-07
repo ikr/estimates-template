@@ -23,11 +23,7 @@ export default ({displayTasks, tasks, active, narrative, onToggleTasks, onChange
 
                 <div className='checkbox col-md-2'>
                     <label>
-                        <input
-                            type='checkbox'
-                            checked={active}
-                            onChange={onChangeActivity}/>
-
+                        <input type='checkbox' checked={active} onChange={onChangeActivity}/>
                         Include into total estimation
                     </label>
                 </div>
