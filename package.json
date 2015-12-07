@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./src ./index.js",
-    "build": "browserify ./index.js -t babelify -t brfs | uglifyjs > ./build/bundle.js",
-    "watch": "watchify ./index.js -t babelify -t brfs -d -o ./build/bundle.js -v"
+    "build": "browserify ./index.js -t babelify -t brfs | uglifyjs > ./www/bundle.js",
+    "watch": "watchify ./index.js -t babelify -t brfs -d -o ./www/bundle.js -v"
   },
   "repository": {
     "type": "git",
