@@ -26,7 +26,7 @@ class Container extends React.Component {
                 <StoriesTotal allTasks={tasks}/>
 
                 <ul className='footer text-right list-unstyled'>
-                    <li>May 2015</li>
+                    <li>December 2015</li>
 
                     <li>
                         Ivan Krechetov &lt;<a href='mailto:ikr@ikr.su'>ikr@ikr.su</a>&gt;
