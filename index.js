@@ -41,7 +41,7 @@ class Container extends React.Component {
     }
 
     stories() {
-        return this.props.stories.map((story, index) => {
+        return this.props.stories.map(({narrative, tasks}, index) => {
             const onChangeActivity = () => {
                     this.toggleStoryActivity(index);
                 },
@@ -54,8 +54,8 @@ class Container extends React.Component {
 
             return <Story
                 key={`k${index}`}
-                narrative={story.narrative}
-                tasks={story.tasks}
+                narrative={narrative}
+                tasks={tasks}
                 active={state.active}
                 displayTasks={state.displayTasks}
                 onChangeActivity={onChangeActivity}
