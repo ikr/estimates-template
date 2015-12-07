@@ -1,14 +1,10 @@
-import polyfill from 'babel-polyfill';
+import babelPolyfill from 'babel-polyfill';
 import React from 'react';
 import {render} from 'react-dom';
 import Story from './src/Story';
 import StoriesTotal from './src/StoriesTotal';
 import allActiveTasks from './src/allActiveTasks';
 import content from './content';
-
-if (!polyfill) {
-    throw new Error('False-y Babel polyfill');
-}
 
 function storiesState(count) {
     return new Array(count).fill({active: true, displayTasks: false});
