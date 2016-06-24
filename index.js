@@ -80,7 +80,6 @@ class Container extends React.Component {
 }
 
 Container.propTypes = {stories: React.PropTypes.array.isRequired};
-Container.defaultProps = {stories: content};
 
 /* global global */
-render(<Container/>, global.document.getElementById('root'));
+render(<Container stories={content}/>, global.document.getElementById('root'));
