@@ -1,9 +1,17 @@
 import React from 'react';
-import {markdown} from 'markdown';
+import marked from 'marked';
+
+const renderer = new marked.Renderer();
+const tableOrg = renderer.table;
+
+renderer.table = (header, body) => tableOrg(header, body).replace(
+    '<table>',
+    '<table class="table table-bordered">'
+);
 
 class StoryNarrative extends React.Component {
     render() {
-        const html = {__html: markdown.toHTML(this.props.markdown)};
+        const html = {__html: marked(this.props.markdown, {renderer})};
 
         // eslint-disable-next-line react/no-danger
         return <div dangerouslySetInnerHTML={html}/>;

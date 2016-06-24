@@ -1,5 +1,13 @@
 ## Another of the user stories
 
+It's all GitHub-flavored markdown, therefore, you can use tables in narratives.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 Justo dolor dis diam nisl. Justo neque. Vitae lorem proin conubia euismod dapibus cubilia quis et
 duis placerat. Lacus purus diam aliquam nam ultrices feugiat. Proin dolor cursus sollicitudin. Felis
 class sociosqu curae pellentesque velit et. Porta lorem nam amet per eget dis ac sollicitudin. Porta
