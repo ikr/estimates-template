@@ -8,6 +8,7 @@ parserOptions:
   sourceType: module
   ecmaFeatures:
     jsx: true
+    impliedStrict: true
 
 plugins:
   - react
@@ -249,3 +250,5 @@ rules:
   yoda:
     - 2
     - never
+extends:
+  - plugin:react/recommended

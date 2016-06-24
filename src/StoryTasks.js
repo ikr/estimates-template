@@ -32,4 +32,6 @@ class StoryTasks extends React.Component {
     }
 }
 
+StoryTasks.propTypes = {tasks: React.PropTypes.array.isRequired};
+
 export default StoryTasks;

@@ -3,7 +3,7 @@ import StoryNarrative from './StoryNarrative';
 import StoryTasks from './StoryTasks';
 import estimateTasks from './estimateTasks';
 
-export default ({displayTasks, tasks, active, narrative, onToggleTasks, onChangeActivity}) => {
+function Story({displayTasks, tasks, active, narrative, onToggleTasks, onChangeActivity}) {
     const tasksToggleTitle = (displayTasks ? 'Hide tasks' : 'Show tasks');
     const elTasks = (displayTasks ? <StoryTasks tasks={tasks}/> : null);
     const estimation = estimateTasks(tasks);
@@ -36,4 +36,15 @@ export default ({displayTasks, tasks, active, narrative, onToggleTasks, onChange
             </div>
         </div>
     );
+}
+
+Story.propTypes = {
+    displayTasks: React.PropTypes.bool.isRequired,
+    active: React.PropTypes.bool.isRequired,
+    narrative: React.PropTypes.string.isRequired,
+    tasks: React.PropTypes.array.isRequired,
+    onToggleTasks: React.PropTypes.func.isRequired,
+    onChangeActivity: React.PropTypes.func.isRequired
 };
+
+export default Story;
