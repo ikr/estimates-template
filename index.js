@@ -1,4 +1,4 @@
-import babelPolyfill from 'babel-polyfill';
+import 'babel-polyfill';
 import React from 'react';
 import {render} from 'react-dom';
 import Story from './src/Story';
