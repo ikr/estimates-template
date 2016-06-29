@@ -3,7 +3,17 @@ import StoryNarrative from './StoryNarrative';
 import StoryTasks from './StoryTasks';
 import estimateTasks from './estimateTasks';
 
-function Story({displayTasks, tasks, active, narrative, onToggleTasks, onChangeActivity}) {
+/* eslint-disable react/prop-types */
+
+function storyWithoutTasks({narrative}) {
+    return (
+        <div>
+            <StoryNarrative markdown={narrative}/>
+        </div>
+    );
+}
+
+function storyWithTasks({displayTasks, tasks, active, narrative, onToggleTasks, onChangeActivity}) {
     const tasksToggleTitle = (displayTasks ? 'Hide tasks' : 'Show tasks');
     const elTasks = (displayTasks ? <StoryTasks tasks={tasks}/> : null);
     const estimation = estimateTasks(tasks);
@@ -36,6 +46,10 @@ function Story({displayTasks, tasks, active, narrative, onToggleTasks, onChangeA
             </div>
         </div>
     );
+}
+
+function Story(props) {
+    return props.tasks.length > 0 ? storyWithTasks(props) : storyWithoutTasks(props);
 }
 
 Story.propTypes = {

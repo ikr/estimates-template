@@ -1,6 +1,9 @@
 var fs = require('fs');
 
 module.exports = [{
+    narrative: fs.readFileSync(__dirname + '/stories/intro/narrative.md', 'utf8'),
+    tasks: []
+}, {
     narrative: fs.readFileSync(__dirname + '/stories/one/narrative.md', 'utf8'),
     tasks: require('./stories/one/tasks')
 }, {
