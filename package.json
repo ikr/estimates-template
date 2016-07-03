@@ -37,7 +37,7 @@
     "browserify-shim": "^3.8.12",
     "eslint": "^3.0.0",
     "eslint-plugin-react": "^5.2.2",
-    "uglify-js": "^2.6.1",
+    "uglify-js": "^2.7.0",
     "watchify": "^3.6.1"
   },
   "browserify-shim": {
