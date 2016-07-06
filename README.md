@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ikr/estimates-template.svg?branch=master)](https://travis-ci.org/ikr/estimates-template)
+
 # Summary
 
 Write user stories in Markdown, list the implementation tasks for each (with an estimation range),
