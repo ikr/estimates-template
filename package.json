@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./src ./index.js",
-    "test": "npm run lint",
+    "test": "npm run lint && npm run build",
     "build": "browserify ./index.js | uglifyjs -m --screw-ie8 > ./www/bundle.js",
     "watch": "watchify ./index.js -d -o ./www/bundle.js -v"
   },
