@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import StoryNarrative from './StoryNarrative';
 import StoryTasks from './StoryTasks';
 import estimateTasks from './estimateTasks';
@@ -53,12 +55,12 @@ function Story(props) {
 }
 
 Story.propTypes = {
-    displayTasks: React.PropTypes.bool.isRequired,
-    active: React.PropTypes.bool.isRequired,
-    narrative: React.PropTypes.string.isRequired,
-    tasks: React.PropTypes.array.isRequired,
-    onToggleTasks: React.PropTypes.func.isRequired,
-    onChangeActivity: React.PropTypes.func.isRequired
+    displayTasks: PropTypes.bool.isRequired,
+    active: PropTypes.bool.isRequired,
+    narrative: PropTypes.string.isRequired,
+    tasks: PropTypes.array.isRequired,
+    onToggleTasks: PropTypes.func.isRequired,
+    onChangeActivity: PropTypes.func.isRequired
 };
 
 export default Story;

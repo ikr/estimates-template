@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import estimateTasks from './estimateTasks';
 
 function StoriesTotal({allTasks}) {
@@ -9,6 +11,6 @@ function StoriesTotal({allTasks}) {
     );
 }
 
-StoriesTotal.propTypes = {allTasks: React.PropTypes.array.isRequired};
+StoriesTotal.propTypes = {allTasks: PropTypes.array.isRequired};
 
 export default StoriesTotal;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function row([title, bestCaseHours, worstCaseHours], index) {
     return (
@@ -32,6 +33,6 @@ class StoryTasks extends React.Component {
     }
 }
 
-StoryTasks.propTypes = {tasks: React.PropTypes.array.isRequired};
+StoryTasks.propTypes = {tasks: PropTypes.array.isRequired};
 
 export default StoryTasks;

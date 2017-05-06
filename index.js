@@ -1,5 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
+import PropTypes from 'prop-types';
+
 import Story from './src/Story';
 import StoriesTotal from './src/StoriesTotal';
 import allActiveTasks from './src/allActiveTasks';
@@ -78,7 +80,7 @@ class Container extends React.Component {
     }
 }
 
-Container.propTypes = {stories: React.PropTypes.array.isRequired};
+Container.propTypes = {stories: PropTypes.array.isRequired};
 
 /* global global */
 render(<Container stories={content}/>, global.document.getElementById('root'));

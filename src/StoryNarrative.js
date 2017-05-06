@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import marked from 'marked';
 
 const renderer = new marked.Renderer();
@@ -22,6 +23,6 @@ class StoryNarrative extends React.Component {
     }
 }
 
-StoryNarrative.propTypes = {markdown: React.PropTypes.string.isRequired};
+StoryNarrative.propTypes = {markdown: PropTypes.string.isRequired};
 
 export default StoryNarrative;
