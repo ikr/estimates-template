@@ -27,7 +27,8 @@
   "homepage": "https://github.com/ikr/estimates-template#readme",
   "dependencies": {
     "estimate-tasks": "^0.1.0",
-    "marked": "^0.3.5"
+    "marked": "^0.3.5",
+    "prop-types": "^15.5.8"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
